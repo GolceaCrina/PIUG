@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import HelpButton from "@/components/Common/Help";
 import { Inter } from "next/font/google";
-import Script from "next/script"; // Import pentru Script
+import Script from "next/script"; // Import for Script component
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 
@@ -20,7 +20,7 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="en">
       <head>
         <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX`}
+          src={`https://www.googletagmanager.com/gtag/js?id=G-HDN0PNNRZP`}
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -28,7 +28,8 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-XXXXXXX');
+
+            gtag('config', 'G-HDN0PNNRZP');
           `}
         </Script>
       </head>
